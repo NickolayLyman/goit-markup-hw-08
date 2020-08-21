@@ -17,9 +17,8 @@
 
 
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
     .advantage-icon-block {
-        width: 450px;
         padding-top: 25px;
         padding-right: 190px;
         padding-bottom: 25px;
@@ -35,7 +34,7 @@
         margin-bottom: 30px;
         }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .advantage-list {
         display: flex;
         flex-wrap: wrap;

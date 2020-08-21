@@ -782,6 +782,7 @@ ul {
     padding-top: 118px;
     max-width: 480px;
     height: 400px;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-bg-mob.jpg);
     background-repeat: no-repeat;
     background-color: #2f303a;
@@ -1132,9 +1133,8 @@ ul {
   line-height: 1.71;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .advantage-icon-block {
-    width: 450px;
     padding-top: 25px;
     padding-right: 190px;
     padding-bottom: 25px;
@@ -1151,7 +1151,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .advantage-list {
     display: flex;
     flex-wrap: wrap;
