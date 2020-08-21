@@ -1,6 +1,67 @@
-.advantage-list {
-    display: flex;
+.advantage-list-icon {
+    width: 70px;
+    height: 70px;
 }
+.advantage-list-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-color;
+    }
+.advantage-list-text {
+    font-size: 14px;
+    line-height: 1.71;
+    }
+
+
+
+@media screen and (min-width: 480px) {
+    .advantage-icon-block {
+        width: 450px;
+        padding-top: 25px;
+        padding-right: 190px;
+        padding-bottom: 25px;
+        padding-left: 190px;
+        margin-bottom: 30px;
+        background: #F5F4FA;
+        border-radius: 4px;   
+    }
+    .advantage-list-title {
+        text-align: center;
+        }
+    .advantage-list-item:not(:last-child) {
+        margin-bottom: 30px;
+        }
+}
+@media screen and (max-width: 1199px) {
+    .advantage-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .advantage-list-item {
+        width: calc((100% - 30px*1)/2);
+
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+    }
+    .advantage-icon-block {
+        padding-top: 25px;
+        padding-right: 142px;
+        padding-bottom: 25px;
+        padding-left: 142px;
+        margin-bottom: 30px;
+        background: #F5F4FA;
+        border-radius: 4px;   
+    }
+}
+@media screen and (min-width: 1200px) {
+    .advantage-list {
+        display: flex;
+    }
+    
 .advantage-list-item {
     width: calc((100% - 30px*3)/4);
 
@@ -8,12 +69,11 @@
         margin-right: 30px;  
     }
 }
-.advantage-list-icon {
-    width: 70px;
-    height: 70px;
-}
+
 .advantage-icon-block {
-    @extend %align-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 25px;
     padding-right: 100px;
     padding-bottom: 25px;
@@ -30,10 +90,12 @@
     text-transform: uppercase;
     color: $title-color;
 }
-.advantage-list-image {
-    margin-bottom: 30px;
-}
 .advantage-list-text {
     font-size: 14px;
     line-height: 1.71;
+    }
 }
+
+
+
+
