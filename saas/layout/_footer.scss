@@ -1,0 +1,157 @@
+.footer {
+    background-color:#2F303A;
+    padding-top: 60px;
+
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    }
+} 
+
+.contacts {
+    margin-right: 30px;
+    width: 270px;
+}
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $secondary-color;
+
+    .logo-footer-item {
+        color: $accent-color;  
+    }
+}
+
+.contacts-block-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-map-link {
+    @extend %font-for-address-link;
+    color: $secondary-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        font-style: normal;
+        color: $accent-color;
+    }
+}
+.footer-mail-link,
+.footer-tel-link {
+    @extend %font-for-address-link;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        font-style: normal;
+        color: $accent-color;
+    }
+}
+.footer-list-link {
+    display: flex;
+}
+.social-links-block {
+    width: 270px;
+}
+.social-links-block-text {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-color;
+}
+.footer-socail-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: $secondary-color;
+}
+.footer-social-list-link {
+    @extend %social-links;
+    background-color: rgba(255, 255, 255, 0.1);
+ 
+    &:hover,
+    &:focus {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%; 
+        color: $accent-color;
+        background-color: $accent-color;  
+        text-align: center;
+        padding: 12px; 
+    }
+
+} 
+
+.footer-social-list-link:hover .footer-social-icon,
+.footer-social-list-link:focus .footer-social-icon {
+    fill: $secondary-color;
+    color: $accent-color;
+}
+.contact-form-wrapper {
+    width: 570px;
+}
+.contact-form-block {
+    display: flex;
+}
+.contact-form-title {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-color;
+}
+.contact-form-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+}
+.contact-form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+}
+.contact-form-input:not(:placeholder-shown) {
+    color: $secondary-color;
+    padding-left: 16px;
+}
+.contact-form-button {
+    @extend %align-center;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $secondary-color;
+}
+.contact-form-icon {
+    margin-left: 10px;
+    fill: $secondary-color;
+}

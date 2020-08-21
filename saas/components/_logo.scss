@@ -1,0 +1,25 @@
+@media screen and (min-width: 480px) {
+    .logo {
+        display: block;
+        // padding-top: 16px;
+        // padding-bottom: 16px;
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+        color: $title-color;
+        
+        .logo-item {
+            color: $accent-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

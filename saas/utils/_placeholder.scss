@@ -1,0 +1,25 @@
+%font-for-address-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+%align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%geometry-and-transition-svg {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: $main-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+%social-links {
+    display: block; 
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
