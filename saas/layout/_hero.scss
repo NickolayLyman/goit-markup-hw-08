@@ -1,36 +1,68 @@
-.hero {
-    margin-bottom: 94px;
-    text-align: center;
-    padding-top: 200px;
-    max-width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.8),
-        rgba(47, 48, 58, 0.8)),
-        url(../images/header-bg.jpg);
-    background-repeat: no-repeat; 
-    background-color: rgb(47, 48, 58);  
-    display: flex; 
-    justify-content: center;
+@media screen and (min-width: 480px) {
+    .hero {
+        text-align: center;
+        padding-top: 118px;
+        max-width: 480px;
+        height: 400px;
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/header-bg-mob.jpg);
+        background-repeat: no-repeat; 
+        background-color: rgb(47, 48, 58);  
+        display: flex; 
+        justify-content: center;
     }
-.hero-title {
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center; 
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $secondary-color;
+    .hero-title {
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        text-align: center; 
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
+    .hero-btn {
+        padding-top: 10px;
+        padding-right: 32px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 1.87;
+        color: $secondary-color;
+        background-color: $accent-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 }
-.hero-btn {
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    border-radius: 4px;
-    cursor: pointer;
-    color: $secondary-color;
-    background-color: $accent-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+    .hero {
+        max-width: 768px;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/header-bg-tablet.jpg);
+        display: flex; 
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        text-align: center;
+        padding-top: 200px;
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.6),
+        rgba(47, 48, 58, 0.6)),
+        url(../images/header-bg.jpg);
+    }
+    .hero-title {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
