@@ -344,12 +344,6 @@ template {
   line-height: 1.71;
 }
 
-.contact-form-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .mail-icon-svg, .phone-icon-svg {
   margin-right: 10px;
   vertical-align: middle;
@@ -497,6 +491,7 @@ ul {
     transition: transform 5000ms cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
     text-align: center;
+    z-index: 99;
   }
   .menu-wrapper.is-open {
     display: block;
@@ -773,6 +768,7 @@ ul {
 
 .modal-btn {
   border: transparent;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -790,10 +786,31 @@ ul {
 
 .btn-list {
   display: flex;
-  justify-content: center;
-  padding-top: 93px;
-  padding-bottom: 50px;
-  cursor: pointer;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-list-item {
+    padding-bottom: 15px;
+  }
 }
 
 .btn-list-item:not(:last-child) {
@@ -818,7 +835,22 @@ ul {
 }
 
 .work-example {
-  padding-bottom: 94px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-example {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 120px) {
+  .work-example {
+    padding-top: 50px;
+    padding-bottom: 94px;
+  }
 }
 
 .work-examples-list {
@@ -827,7 +859,7 @@ ul {
 }
 
 .work-examples-item {
-  width: 370px;
+  width: 100%;
   border: 1px solid #EEEEEE;
 }
 
@@ -894,20 +926,33 @@ ul {
   opacity: 1;
 }
 
-.footer {
+.footer .container {
   background-color: #2F303A;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-.contacts {
-  margin-right: 30px;
-  width: 270px;
+@media screen and (max-width: 1199px) {
+  .footer .container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+  }
 }
 
 .logo-footer {
@@ -915,17 +960,32 @@ ul {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-footer .logo-footer-item {
   color: #2196F3;
 }
 
-.contacts-block-list-item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (min-width: 768px) {
+  .footer-box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-map-link {
@@ -951,12 +1011,12 @@ ul {
   color: #2196F3;
 }
 
-.footer-list-link {
-  display: flex;
+.contacts-block-list-item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
-.social-links-block {
-  width: 270px;
+.footer-list-link {
+  display: inline-flex;
 }
 
 .social-links-block-text {
@@ -999,12 +1059,17 @@ ul {
   color: #2196F3;
 }
 
-.contact-form-wrapper {
-  width: 570px;
-}
-
 .contact-form-block {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form-block {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .contact-form-title {
@@ -1019,13 +1084,26 @@ ul {
 }
 
 .contact-form-input {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2F303A;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-form-input {
+    width: 450px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form-input {
+    width: 360px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }
 
 .contact-form-input::placeholder {
@@ -1044,13 +1122,19 @@ ul {
 }
 
 .contact-form-button {
-  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
-  text-align: center;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-weight: bold;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;

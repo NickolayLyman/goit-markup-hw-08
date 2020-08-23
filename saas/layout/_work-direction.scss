@@ -1,9 +1,11 @@
-@media screen and (max-width: 1199px) {
-    .work-direction {
+.work-direction {
+@media screen and (max-width: 1199px){ 
         display: none;
     }
+@media screen and (min-width: 1200px){ 
+        padding-top: 0;
+    }
 }
-@media screen and (min-width: 1200px) {
 .work-direction-title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -38,4 +40,3 @@
     color: $secondary-color;
     background-color: rgba(47, 48, 58, 0.8);
     }
-}

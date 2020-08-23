@@ -9,21 +9,29 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="container">
-    <nav class="navigation">
-        <a class="logo link" href="./index.html" aria-label="Логотип компании Веб студия"><span class="logo-item">Web</span>Studio</a>
+        <div class="container header-container">
+            <a class="logo link" href="./index.html" aria-label="Логотип компании Веб студия"><span class="logo-item">Web</span>Studio</a>
+    <button type="button" aria-expanded="false" aria-controls="menu-wrapper" class="menu-btn" data-menu-button>
+        <svg width="24" height="16">
+            <use href="./images/sprite.svg#icon-cross" class="icon-cross"></use>
+            <use href="./images/sprite.svg#icon-burger" class="icon-burger"></use>
+        </svg>
+    </button>
+    <div class="menu-wrapper" data-menu>
+    <nav class="navigation">  
     <ul class="navigation-list">
         <li class="navigation-list-item list">
-            <a class="navigation-list-link link" href="./index.html" aria-label="Переход на главную страницу сайта">Студия</a>
+            <a class="navigation-list-link selected link" href="./index.html" aria-label="Переход на главную страницу сайта">Студия</a>
         </li>
         <li class="navigation-list-item list">
-            <a class="navigation-list-link selected link" href="./portfolio.html" aria-label="Переход на страницу портфолио">Портфолио</a>
+            <a class="navigation-list-link link" href="./portfolio.html" aria-label="Переход на страницу портфолио">Портфолио</a>
         </li>
         <li class="navigation-list-item list">
             <a class="navigation-list-link link" href="" aria-label="Переход на страницу контактов">Контакты</a>
         </li>
     </ul>
     </nav>
+    <div class="header-utils">
         <ul class="header-contacts-list">
             <li class="header-contacts-item list">  
                 <a class="header-mail-link link" href="mailto:info@devstudio.com">
@@ -34,7 +42,7 @@
                     info@devstudio.com 
                 </a>  
             </li>
-            <li class="header-contacts-item list">
+            <li class="header-contacts-item tel list">
                 <a class="header-tel-link link" href="tel:+380961111111">
                     <svg class="phone-icon-svg" >
                         <use href="./images/sprite.svg#icon-phone">
@@ -43,6 +51,8 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+    </div>
+    </div>
     </div>
     </header>
         <main>
@@ -204,7 +214,7 @@
         <footer class="footer">
             <div class="container">
               <!--Контакты-->
-          <div class="contacts">
+          <div class="footer-box contacts">
               <a class="logo-footer link" href="./index.html"><span class="logo-footer-item">Web</span>Studio</a>
               <address class="contacts-block">
                   <ul class="contacts-block-list">
@@ -221,7 +231,7 @@
               </address>
           </div>
           <!--Ссылки на соцсети-->
-          <div class="social-links-block">
+          <div class="footer-box social-links-block">
               <b class="social-links-block-text">Присоединяйтесь</b>
               <ul class="footer-list-link">
                   <li class="footer-socail-list-item list">
@@ -255,21 +265,22 @@
               </ul>  
           </div>
           <!--Форма подписки-->
-<div class="contact-form-wrapper">
-    <form class="contact-form" action="#">
-        <b class="contact-form-title">Подпишитесь на рассылку</b>
-        <div class="contact-form-block">
-        <input class="contact-form-input" type="email" name="email" placeholder="E-mail" required>
-        <button type="submit" class="contact-form-button">
-            Подписаться
-            <svg class="contact-form-icon" width="24px" height="24px">
-                <use href="./images/sprite.svg#icon-telegram-icon"></use>
-            </svg>
-        </button>
-        </div>
-    </form>
-</div>
+          <div class="footer-box contact-form-wrapper">
+              <form class="contact-form" action="#">
+                  <b class="contact-form-title">Подпишитесь на рассылку</b>
+                  <div class="contact-form-block">
+                  <input class="contact-form-input" type="email" name="email" placeholder="E-mail" required>
+                  <button type="submit" class="contact-form-button">
+                      Подписаться
+                      <svg class="contact-form-icon" width="24px" height="24px">
+                          <use href="./images/sprite.svg#icon-telegram-icon"></use>
+                      </svg>
+                  </button>
+                  </div>
+              </form>
+          </div>
           </div>
           </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

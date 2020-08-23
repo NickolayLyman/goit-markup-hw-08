@@ -1,5 +1,6 @@
 .modal-btn {
     border: transparent;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -17,10 +18,24 @@
 }
 .btn-list {
     display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+@media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    padding-top: 93px;
-    padding-bottom: 50px;
-    cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 94px;
+}
+}
+.btn-list-item {
+@media screen and (max-width: 767px) {
+    padding-bottom: 15px;
+}
 }
 .btn-list-item:not(:last-child) {
     margin-right: 8px;
