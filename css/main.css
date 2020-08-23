@@ -661,6 +661,7 @@ ul {
   }
   .navigation-list {
     display: flex;
+    margin-right: 305px;
   }
   .navigation-list-link {
     display: block;
@@ -1410,7 +1411,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .team-list-item {
     width: calc((100% - 30px)/2);
   }
