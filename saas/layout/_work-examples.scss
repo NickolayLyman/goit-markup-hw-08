@@ -5,7 +5,7 @@
     padding-top: 30px;
     padding-bottom: 60px;
 }
-@media screen and (min-width: 120px) {
+@media screen and (min-width: 1200px) {
     padding-top: 50px;
     padding-bottom: 94px;
 }
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 .work-examples-item {
-    width: 100%;
+    // width: 450px;
     border: 1px solid #EEEEEE;
 
     &:not(:nth-child(3n)) {
@@ -51,10 +51,14 @@
     color: $main-color;
 }
 .work-examples-wrapper {
+    width: 450px;
     position: relative;
     overflow: hidden;
     
 }
+.work-examples-item-link-image {
+    width: 100%;
+ }
 .work-examples-desc {
     position: absolute;
     top: 0;

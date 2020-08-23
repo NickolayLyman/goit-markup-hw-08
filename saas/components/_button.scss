@@ -20,12 +20,12 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
