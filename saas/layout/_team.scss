@@ -38,10 +38,14 @@
 .team-title {
     margin-bottom: 30px;
     font-weight: 700;
-    font-size: 28x;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: $title-color;
+@media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+}
 }
 .team-list-item-name {
     margin-bottom: 10px;
@@ -59,12 +63,13 @@
  }
 .team-list-item-image {
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     width: 450px;
     margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px)  {
     width: 354px;
+    margin-bottom: 30px;
 }
 }
 .team-list {
@@ -102,7 +107,7 @@
         margin-right: 30px;
     }
     &:not(:nth-last-child(-n+2)) {
-            margin-bottom: 30px;  
+    margin-bottom: 30px;  
         }
 
   

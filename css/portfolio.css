@@ -741,23 +741,10 @@ ul {
   color: #212121;
 }
 
-.logo .logo-item {
-  color: #2196F3;
-}
-
 @media screen and (min-width: 768px) {
   .logo {
-    display: block;
     margin-right: 88px;
     padding-top: 26px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    color: #212121;
-  }
-  .logo .logo-item {
-    color: #2196F3;
   }
 }
 
@@ -765,6 +752,10 @@ ul {
   .logo {
     margin-right: 93px;
   }
+}
+
+.logo-item {
+  color: #2196F3;
 }
 
 .modal-btn {
@@ -968,8 +959,12 @@ ul {
   opacity: 1;
 }
 
-.footer .container {
+.footer {
   background-color: #2F303A;
+  background-size: 100%;
+}
+
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }

@@ -1,14 +1,17 @@
-.footer .container {
+.footer {
     background-color:#2F303A;
+    background-size: 100%; 
+}
+.footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     }
-    @media screen and (max-width: 1199px) {
-      text-align: center;
+@media screen and (max-width: 1199px) {
+    text-align: center;
         }
 
 @media screen and (min-width: 1200px) {

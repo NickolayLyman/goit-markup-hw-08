@@ -747,23 +747,10 @@ ul {
   color: #212121;
 }
 
-.logo .logo-item {
-  color: #2196F3;
-}
-
 @media screen and (min-width: 768px) {
   .logo {
-    display: block;
     margin-right: 88px;
     padding-top: 26px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    color: #212121;
-  }
-  .logo .logo-item {
-    color: #2196F3;
   }
 }
 
@@ -771,6 +758,10 @@ ul {
   .logo {
     margin-right: 93px;
   }
+}
+
+.logo-item {
+  color: #2196F3;
 }
 
 .section {
@@ -838,6 +829,7 @@ ul {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk@2x.jpg);
+    background-size: 100% 100%;
   }
 }
 
@@ -981,6 +973,12 @@ ul {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    max-width: 528px;
+  }
+}
+
 .modal-form-title {
   font-weight: 700;
   font-size: 20px;
@@ -989,6 +987,12 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    line-height: 1.15;
+  }
 }
 
 .modal-form-close-btn {
@@ -1086,11 +1090,24 @@ ul {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-comment {
+    width: 448px;
+  }
+}
+
 .modal-form-comment::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .modal-form-checkbox {
@@ -1143,6 +1160,13 @@ ul {
   line-height: 1.16;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-option-span {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .modal-form-link {
   text-decoration: underline;
   color: #2196F3;
@@ -1165,26 +1189,6 @@ ul {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 1200px) {
-  .modal-form {
-    max-width: 528px;
-  }
-  .modal-form-title {
-    line-height: 1.15;
-  }
-  .modal-form-comment {
-    width: 448px;
-  }
-  .modal-form-comment::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-  }
-  .modal-form-option-span {
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1371,10 +1375,17 @@ ul {
 .team-title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 28x;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team-list-item-name {
@@ -1393,7 +1404,7 @@ ul {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .team-list-item-image {
     width: 450px;
     margin-bottom: 30px;
@@ -1403,6 +1414,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .team-list-item-image {
     width: 354px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1545,8 +1557,12 @@ ul {
   fill: #2196F3;
 }
 
-.footer .container {
+.footer {
   background-color: #2F303A;
+  background-size: 100%;
+}
+
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
