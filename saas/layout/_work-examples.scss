@@ -11,8 +11,10 @@
 }
 }
 .work-examples-list {
+    @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+}
 }
 .work-examples-item {
     border: 1px solid #EEEEEE;
@@ -22,7 +24,7 @@
         margin-bottom: 30px;
     }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px)/2);
 
     &:nth-child(2n+1) {
